@@ -81,6 +81,8 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        // Google Maps API key for react-native-maps. Set GOOGLE_MAPS_API_KEY in android/gradle.properties.
+        manifestPlaceholders = [GOOGLE_MAPS_API_KEY: project.findProperty("GOOGLE_MAPS_API_KEY") ?: "YOUR_GOOGLE_MAPS_API_KEY"]
     }
     signingConfigs {
         debug {

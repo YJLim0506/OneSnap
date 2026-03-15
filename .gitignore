@@ -64,3 +64,9 @@ yarn-error.log
 
 # testing
 /coverage
+
+# Environment variables and secrets (keep out of git)
+.env
+.env.local
+.env*.local
+config.secret.ts
